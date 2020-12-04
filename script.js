@@ -23,53 +23,55 @@ let onHoldListArray = [];
 
 // Get Arrays from localStorage if available, set default values if not
 function getSavedColumns() {
-  if (localStorage.getItem('backlogItems')) {
-    backlogListArray = JSON.parse(localStorage.backlogItems);
-    progressListArray = JSON.parse(localStorage.progressItems);
-    completeListArray = JSON.parse(localStorage.completeItems);
-    onHoldListArray = JSON.parse(localStorage.onHoldItems);
-  } else {
-    backlogListArray = ['Release the course', 'Sit back and relax'];
-    progressListArray = ['Work on projects', 'Listen to music'];
-    completeListArray = ['Being cool', 'Getting stuff done'];
-    onHoldListArray = ['Being uncool'];
-  }
+    if (localStorage.getItem('backlogItems')) {
+        backlogListArray = JSON.parse(localStorage.backlogItems);
+        progressListArray = JSON.parse(localStorage.progressItems);
+        completeListArray = JSON.parse(localStorage.completeItems);
+        onHoldListArray = JSON.parse(localStorage.onHoldItems);
+    } else {
+        backlogListArray = ['Release the course', 'Sit back and relax'];
+        progressListArray = ['Work on projects', 'Listen to music'];
+        completeListArray = ['Being cool', 'Getting stuff done'];
+        onHoldListArray = ['Being uncool'];
+    }
 }
+
+getSavedColumns();
+updateSavedColumns();
 
 // Set localStorage Arrays
 function updateSavedColumns() {
-  localStorage.setItem('backlogItems', JSON.stringify(backlogListArray));
-  localStorage.setItem('progressItems', JSON.stringify(progressListArray));
-  localStorage.setItem('completeItems', JSON.stringify(completeListArray));
-  localStorage.setItem('onHoldItems', JSON.stringify(onHoldListArray));
+    localStorage.setItem('backlogItems', JSON.stringify(backlogListArray));
+    localStorage.setItem('progressItems', JSON.stringify(progressListArray));
+    localStorage.setItem('completeItems', JSON.stringify(completeListArray));
+    localStorage.setItem('onHoldItems', JSON.stringify(onHoldListArray));
 }
 
 // Create DOM Elements for each list item
 function createItemEl(columnEl, column, item, index) {
-  console.log('columnEl:', columnEl);
-  console.log('column:', column);
-  console.log('item:', item);
-  console.log('index:', index);
-  // List Item
-  const listEl = document.createElement('li');
-  listEl.classList.add('drag-item');
+    console.log('columnEl:', columnEl);
+    console.log('column:', column);
+    console.log('item:', item);
+    console.log('index:', index);
+    // List Item
+    const listEl = document.createElement('li');
+    listEl.classList.add('drag-item');
 
 }
 
 // Update Columns in DOM - Reset HTML, Filter Array, Update localStorage
 function updateDOM() {
-  // Check localStorage once
+    // Check localStorage once
 
-  // Backlog Column
+    // Backlog Column
 
-  // Progress Column
+    // Progress Column
 
-  // Complete Column
+    // Complete Column
 
-  // On Hold Column
+    // On Hold Column
 
-  // Run getSavedColumns only once, Update Local Storage
+    // Run getSavedColumns only once, Update Local Storage
 
 
 }
-
