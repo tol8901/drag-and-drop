@@ -12,16 +12,28 @@ This project is available on the link below:
 https://tol8901.github.io/drag-and-drop/
 # Screenshots
 Below attached screenshots of this project.
+
 Start page:
+
 <img width="928" alt="1" src="https://user-images.githubusercontent.com/39213432/101259818-42032580-373c-11eb-94bc-0eba0129202e.png">
+
 Change a content of the item:
+
 <img width="927" alt="2" src="https://user-images.githubusercontent.com/39213432/101259824-492a3380-373c-11eb-925c-2ad47900d458.png">
+
 Creating a new item:
+
 <img width="927" alt="3" src="https://user-images.githubusercontent.com/39213432/101259827-50e9d800-373c-11eb-9c08-0334e33ece24.png">
+
 Move the item from the one column to another:
+
 <img width="953" alt="4" src="https://user-images.githubusercontent.com/39213432/101259830-5ba46d00-373c-11eb-92c7-62eeab0f9835.png">
+
 To delete an item, just remove its content:
+
 <img width="957" alt="5" src="https://user-images.githubusercontent.com/39213432/101259840-652dd500-373c-11eb-80c0-e14db1c57f44.png">
+
 The item removed succesfully:
+
 <img width="957" alt="6" src="https://user-images.githubusercontent.com/39213432/101259844-6ced7980-373c-11eb-84d3-79ddca37d382.png">
 
